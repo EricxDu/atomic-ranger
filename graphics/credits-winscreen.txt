@@ -1,0 +1,11 @@
+W Intermission Characters (wicolon and wiminus and wipcnt)
+From "KenVector Future Thin" at size 16
+https://opengameart.org/content/kenney-fonts
+
+W Intermission Numbers (winum0 through winum9)
+From "KenVector Future Thin" at size 16
+https://opengameart.org/content/kenney-fonts
+
+W Intermission Text (wi*)
+From "KenVector Future2 Thin" at size 20
+https://opengameart.org/content/font-kenvector-future-2-modified

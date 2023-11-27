@@ -1,0 +1,18 @@
+From "Electric Sound Library" by Little Robot Sound Factory
+dspdiehi = "SpaceEngine Start 01"
+dspldeth = "SpaceEngine Start 00"
+dsplpain = "UI Electric 00"
+
+From "Sci-Fi Sound Library" by Little Robot Sound Factory
+dsnoway = "UI Electric 01"
+dspdiehi = "WarpDrive 00"
+dspistol = "Laser 04"
+dsshotgn = "Laser 03"
+dsdshtgn = "Laser 06"
+
+From "UI Sound Library" by Little Robot Sound Factory
+dsgetpow = "Slide Electronic 00" and "Slide Electronic 01"
+dsitemup = "Click Electronic 06"
+dsitemup = "Click Electronic 13"
+dsoof = "Slide Sharp 02"
+dswpnup = "Click Electronic 07"

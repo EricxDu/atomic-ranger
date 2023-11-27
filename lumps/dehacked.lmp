@@ -1,0 +1,63 @@
+Patch File for DeHackEd v3.0
+Doom version = 19
+Patch format = 6
+
+# stop player from bleeding when shot
+Thing 1 (Player)
+Bits = SOLID+SHOOTABLE+DROPOFF+PICKUP+NOTDMATCH+NOBLOOD
+
+# various flavor changes to the HUD text
+[STRINGS]
+GOTARMOR = Shields up.
+GOTMEGA = Shields reinforced.
+GOTHTHBONUS = Power boosted.
+GOTARMBONUS = Shields boosted.
+GOTSUPER = Power overcharged!
+GOTMSPHERE = Power and shields to maximum!
+GOTBLUECARD = Blue access key added.
+GOTYELWCARD = Yellow access key added.
+GOTREDCARD = Red access key added.
+GOTBLUESKUL = Blue artifact added.
+GOTYELWSKUL = Yellow artifact added.
+GOTREDSKULL = Red artifact added.
+GOTSTIM = Some power recharded.
+GOTMEDINEED = Partial power restored.
+GOTMEDIKIT = Power recharged.
+GOTINVUL = Phase shields activated!
+GOTBERSERK = Energized!
+GOTINVIS = Cloaking device activated.
+GOTSUIT = Environmental shielding activated.
+GOTMAP = Area Map downloaded.
+GOTVISOR = Low-light scanner activated.
+GOTCLIP = Point ammo added.
+GOTCLIPBOX = More point ammo added.
+GOTROCKET = Microissile added.
+GOTROCKBOX = More micromissiles added.
+GOTCELL = Atomic energy added.
+GOTCELLBOX = More atomic energy added.
+GOTSHELLS = Spread ammo added.
+GOTSHELLBOX = More spread ammo added.
+GOTBACKPACK = Ammo reserve tank attached!
+GOTBFG9000 = Photon Cannon equipped!
+GOTCHAINGUN = Vulcan Cannon equipped!
+GOTCHAINSAW = Power Cutter equipped!
+GOTLAUNCHER = Missile Launcher equipped!
+GOTPLASMA = Ion Cannon equipped!
+GOTSHOTGUN = Spread Gun equipped!
+GOTSHOTGUN2 = Scatter Gun equipped!
+TAG_FIST = impact driver
+TAG_BFG9000 = photon cannon
+TAG_CHAINGUN = machine gun
+TAG_CHAINSAW = power cutter
+TAG_ROCKETLAUNCHER = bazooka
+TAG_PLASMARIFLE = ion cannon
+TAG_SHOTGUN = spread gun
+TAG_SUPERSHOTGUN = scatter gun
+
+# text for Mr Friendly mod
+MFTXT_OBJ_NAME_BlueArmor = laser tag vest (red team)
+MFTXT_OBJ_NAME_GreenArmor = laser tag vest (green team)
+MFTXT_OBJ_NAME_Medikit = free electrons (large)
+MFTXT_OBJ_DESC_Medikit = Really gets the power flowing.
+MFTXT_OBJ_NAME_StimPack = free electrons (small)
+MFTXT_OBJ_DESC_StimPack = Good for a little pick-me-up.

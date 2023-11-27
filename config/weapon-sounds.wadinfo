@@ -1,0 +1,9 @@
+# Some enemies share the weapon sounds with the player:
+#     DSPISTOL
+#     DSPLASMA
+#     DSSHOTGN
+
+[sounds]
+dspistol
+dsshotgn
+dsdshtgn

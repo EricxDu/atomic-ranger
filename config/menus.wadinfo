@@ -1,0 +1,13 @@
+# All graphics prefixed with M_
+# A single menu-exclusive sound DSSWTCHN
+# Original Doom has fewer MI lumps than newer WADs
+# Changed terminology:
+#     I'm too young to die: Trainee (M_JKILL)
+#     Hey, not too rough: Beginner (M_ROUGH)
+#     Hurt Me Plenty: Proficient (M_HURT)
+#     Ultra-Violence: Advanced (M_ULTRA)
+#     Nightmare: Legendary (M_NMARE)
+
+[graphics]
+m_skull1	16	-4
+m_skull2	16	-4

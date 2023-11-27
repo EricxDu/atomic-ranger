@@ -1,0 +1,19 @@
+Statusbar Arms and Statusbar Bar (starms and stbar)
+Inspired by "Sci-fi User Interface Elements"
+https://opengameart.org/content/sci-fi-user-interface-elements
+
+Statusbar Character Font (stcfn033 through stcfn090)
+From "KenPixel Future"
+https://opengameart.org/content/kenney-fonts
+
+Statusbar Gray Numbers (stgnum0 through stgnum9)
+
+Statusbar T Characters (sttminus and sttprcnt)
+From "KenVector Future2 Thin"
+https://opengameart.org/content/font-kenvector-future-2-modified
+
+Statusbar T Numbers (sttnum0 through sttnum9)
+From "KenVector Future2 Thin"
+https://opengameart.org/content/font-kenvector-future-2-modified
+
+Statusbar Yellow S Numbers (stysnum0 through stysnum9)
