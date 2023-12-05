@@ -1,24 +1,36 @@
+BOOM_WAD = powersuit.wad
+CHOCOLATE_DEH = powersuit-cd.deh
+CHOCOLATE_SPRITES = powersuit-sprites.wad
+CHOCOLATE_WAD = powersuit-cd.wad
+
 normal: config/everything.wadinfo
-	$(RM) powersuit.wad
-	deutex -doom2 config -make config/everything.wadinfo powersuit.wad
+	$(RM) $(BOOM_WAD)
+	$(RM) $(BOOM_RUNNER)
+	deutex -doom2 config -make config/everything.wadinfo $(BOOM_WAD)
+	$(file >$(BOOM_RUNNER), boom -file powersuit.wad)
 
 chocolate: config/nosprites.wadinfo config/allsprites.wadinfo
-	$(RM) powersuit.wad
-	$(RM) powersuit-sprites.wad
-	$(RM) powersuit.deh
-	deutex -doom2 config -make config/nosprites.wadinfo powersuit-cd.wad
-	deutex -doom2 config -make config/allsprites.wadinfo powersuit-sprites.wad
-	$(file > powersuit.deh,$(file < lumps/chocolate.deh))
-	$(file > chocolate-powersuit.run,$(file < dist/chocolate-powersuit.txt))
+	$(RM) $(CHOCOLATE_WAD)
+	$(RM) $(CHOCOLATE_SPRITES)
+	$(RM) $(CHOCOLATE_DEH)
+	$(RM) $(CHOCOLATE_RUNNER)
+	deutex -doom2 config -make config/nosprites.wadinfo $(CHOCOLATE_WAD)
+	deutex -doom2 config -make config/allsprites.wadinfo $(CHOCOLATE_SPRITES)
+	$(file > $(CHOCOLATE_DEH),$(file < lumps/chocolate.deh))
+	$(file > $(CHOCOLATE_RUNNER), chocolate-doom -file powersuit-cd.wad -as powersuit-sprites.wad -deh lumps/chocolate.deh)
 
 clean:
-	$(RM) -f powersuit.wad powersuit-cd.wad powersuit-sprites.wad powersuit.deh statusbar.wad statusbar.deh weapons.wad weapon-sounds.wad weapon-sprites.wad powersuit.run chocolate-powersuit.run
+	$(RM) -f $(BOOM_WAD) $(CHOCOLATE_WAD)
+	$(RM) -f $(CHOCOLATE_SPRITES) $(CHOCOLATE_DEH)
+	$(RM) -f statusbar.wad statusbar.deh
+	$(RM) -f weapons.wad weapon-sounds.wad weapon-sprites.wad
+	$(RM) -f $(BOOM_RUNNER) $(CHOCOLATE_RUNNER)
 
-statusbar: config/statusbar.wadinfo lumps/statusbar.deh
+statusbar: config/statusbar.wadinfo lumps/chocolate.deh
 	$(RM) statusbar.wad
 	$(RM) statusbar.deh
 	deutex -doom2 config -make config/statusbar.wadinfo statusbar.wad
-	$(file > statusbar.deh,$(file < lumps/statusbar.deh))
+	$(file > statusbar.deh,$(file < lumps/chocolate.deh))
 
 weapons: config/weapons.wadinfo config/weapon-sprites.wadinfo config/weapon-sounds.wadinfo
 	$(RM) weapons.wad
